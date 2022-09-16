@@ -1,0 +1,122 @@
+<!-- <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+  
+  <label for="basic-url" class="form-label">Your vanity URL</label>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+  
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">.00</span>
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-text">With textarea</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div> -->
+
+
+<div ng-app="myApp" class="container" style="width:350px">
+
+    <div ng-controller="ContactController">
+        <!-- <div align="right">
+			<a href="#" ng-click="searchUser()">{{title}}</a>
+		  </div> -->
+        <form role="form" class="well" ng-hide="ifSearchUser">
+            <div class="form-group">
+                <label for="name"> Name: </label>
+                <input type="text" id="name" class="form-control" placeholder="Enter Name " ng-model="newcontact.name">
+            </div>
+            <div class="form-group">
+                <label for="email"> Choose Your Email: </label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Email "
+                    ng-model="newcontact.email">
+            </div>
+            <div class="form-group">
+                <label for="password"> Create Your Password: </label>
+                <input type="password" id="password" class="form-control" placeholder="Enter Password "
+                    ng-model="newcontact.password">
+            </div>
+            <div class="form-group">
+                <label for="password"> Confirm Your Password: </label>
+                <input type="password" id="password" class="form-control" placeholder="Enter Password "
+                    ng-model="newcontact.password">
+            </div>
+            <div class="form-group">
+                <label for="phone"> Phone: </label>
+                <input type="text" id="phone" class="form-control" placeholder="Enter Phone "
+                    ng-model="newcontact.phone">
+            </div>
+          
+            <div class="form-group">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" class="form-control" placeholder="Enter Birthdate "
+                    ng-model="newcontact.Birthdate">
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Gender"> Enter Gender: </label>
+                <select class="form-control selectpicker Gender" >
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email"> Email: </label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Email "
+                    ng-model="newcontact.email">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="countrypicker"> Country: </label>
+                <select class="form-control selectpicker countrypicker" data-flag="true" >
+                    <option value="">India</option>
+                    <option value="">Canada</option>
+                    <option value="">USA</option>
+                    <option value="">Pakistan</option>
+                    <option value="">Shrilanka</option>
+                    <option value="">Bangladesh</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  I agree to Google <a href="#">Terms & services</a> and <a href=""> Privacy Policy</a>
+                </label>
+            </div>
+              
+            
+            <br>
+
+            <input type="hidden" ng-model="newcontact.id">
+            <input type="button" class="btn btn-primary" ng-click="saveContact()" class="btn btn-primary"
+                value="Submit">
+            <br>
+
+            
+        </form>
+
+
+    </div>
+</div>

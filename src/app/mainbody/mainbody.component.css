@@ -1,0 +1,35 @@
+
+nav {
+    float: left;
+    width: 50%;
+    height: 800px; /* only for demonstration, should be removed */
+    background: white;
+    padding: 30px;
+    position: relative;
+    left: 40px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+article {
+    float: right;
+    width: 40%;
+    padding: 20px;
+    
+    background-color: #f1f1f1;
+    margin: 10px;
+    
+    
+    height: 800px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
